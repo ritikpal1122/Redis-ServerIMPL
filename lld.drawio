@@ -1,0 +1,46 @@
+<mxfile host="65bd71144e">
+    <diagram id="1hS-W2lQ7kyUf4-HT7R7" name="Page-1">
+        <mxGraphModel dx="666" dy="542" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="5" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="2" target="3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="Main&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="280" y="80" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="3" target="6">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="- Initializes server and starts listening  &lt;br&gt;- Calls start_server() from server.c&amp;nbsp; &amp;nbsp;&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+                    <mxGeometry x="220" y="190" width="240" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="6" target="10">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="- Accepts client connections&amp;nbsp;&amp;nbsp;&lt;br&gt;&amp;nbsp;- Uses select() for multiplexing&lt;br&gt;- Calls handle_client() from client_handler.c &amp;nbsp; &amp;nbsp;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+                    <mxGeometry x="190" y="360" width="310" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="   Server (server.c)  " style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="350" y="305" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="10" target="13">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="- Reads client commands (SET, GET, DEL, NUKE)&amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;br&gt;- Calls appropriate key-value store function&amp;nbsp;(set_key_value(), get_value(), delete_key()) " style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+                    <mxGeometry x="160" y="545" width="380" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="               Client Handler (client_handler.c)  " style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="140" y="485" width="200" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="&amp;nbsp;- set_key_value(): Store data in memory&lt;br&gt;- get_value(): Retrieve data by key  &amp;nbsp;&amp;nbsp;&lt;br&gt;-&amp;nbsp; delete_key(): Remove key-value pair&amp;nbsp;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+                    <mxGeometry x="215" y="690" width="270" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="  Key-Value Store&lt;br&gt;&amp;nbsp;(key_value_store.c) " style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="340" y="630" width="130" height="40" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
